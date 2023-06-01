@@ -1,0 +1,42 @@
+<h1>Checkout</h1>
+<link rel="stylesheet" href="checkout.css">
+<div>
+  {{#if cartItems.length}}
+    <table>
+      <thead>
+        <tr>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each cartItems}}
+          <tr>
+            <td>{{this.quantity}}</td>
+            <td>{{this.price}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <p>No items in cart</p>
+  {{/if}}
+</div>
+
+<p>Total: {{totalPrice}}</p> 
+
+<form action="/payment" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="{{user.name}}" required>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" value="{{user.email}}" required>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" name="phone" value="{{user.phone}}" required>
+
+  <label for="address">address:</label>
+  <input type="add" name="address" value="{{user.address}}" required>
+
+  <button type="submit">Pay Now</button>
+</form>

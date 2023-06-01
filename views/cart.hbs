@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <button onclick="location.href='/menu'">Back to Menu</button>
+  <h1>Cart</h1>
+  {{#each menuItems}}
+    <div>
+      <h2>{{name}}</h2>
+       <form action="/cart/{{_id}}/updateQuantity" method="post">
+        <input type="hidden" name="itemId" value="{{_id}}">
+        <p>Quantity: 
+          <input type="number" name="quantity" value="{{quantity}}" min="1" max="10">
+          <button type="submit">Update</button>
+          <button type="button cancel"><a class="cancel-link" href="/cart/{{_id}}/cancel">Cancel</a></button>
+        </p>
+      </form>
+      <p>Price:{{price}}Rs.</p>
+    </div>
+  {{/each}}
+  <h2>Total Price:{{totalPrice}}Rs.</h2>
+  <form action="/checkout" method="get">
+<button type="submit">Pay Now</button>
+</form>
+</body>
+</html>
+
+

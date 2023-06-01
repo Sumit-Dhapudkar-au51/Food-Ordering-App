@@ -1,0 +1,70 @@
+/* Center the content in the page */
+body {
+    background-image: url(https://images.unsplash.com/photo-1589010588553-46e8e7c21788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+   /* img {
+    margin: 20px;
+  } 
+    */
+  /* Style the form container */
+  .SignUpinbox {
+    margin: 20px;
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #797171;
+    border-radius: 5px;
+    background-color: rgba(92, 90, 90, 0.593);
+    
+  }
+  
+  /* Style the form labels and inputs */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the signup button */
+  button[type="submit"] {
+    background-color:  #b3a93b;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Change the background color of the button when hovered */
+  button:hover {
+    background-color: #9d942f;
+  }
+  
+  .txtname, .txtemail, .txtmobile, .txtpass, .txtadd {
+   color: #f1df19;
+  }
+
+  h2{
+    color: #f1df19;
+  }

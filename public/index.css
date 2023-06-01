@@ -1,0 +1,37 @@
+/* Add background image */
+body {
+    background-image: url(https://images.unsplash.com/photo-1589010588553-46e8e7c21788?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1{
+    margin-top: 16px;
+    text-align: center;
+    padding-top: 100px;
+  }
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #100c0c;
+    background-color: #f4c90b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .button:hover {
+    background-color: #d8b61b;
+  }
+  
+  /* Button container styles */
+  .buttons {
+    margin-top: 16px;
+    text-align: center;
+    padding-top: 10px;
+  }

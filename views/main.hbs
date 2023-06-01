@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyApp</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        {{#each products}}
+        <li>{{name}} - {{price}} Rs</li>
+        {{/each}}
+    </ul>
+    <a href="/add">Add Product</a>
+</body>
+</html>
